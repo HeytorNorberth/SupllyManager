@@ -11,7 +11,7 @@ git clone https://github.com/HeytorNorberth/SupllyManager
 ### 2. Entre na pasta do projeto:
 
 ```bash
-cd todo-list
+cd supply-manager-main
 ```
 
 ### 3. Crie um ambiente virtual:
