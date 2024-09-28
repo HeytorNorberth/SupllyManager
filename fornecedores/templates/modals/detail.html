@@ -1,0 +1,17 @@
+<div class="modal fade" id="detail{{fornecedor.id}}" tabindex="-1" aria-labelledby="detailLabel{{fornecedor.id}}" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="detailLabel{{fornecedor.id}}">Detalhes do fornecedor</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <input style="font-weight: bold;" type="text" name="nome" value="{{fornecedor.nome}}" readonly disabled>
+            <textarea style="font-weight: bold;" name="descricao" rows="5" readonly disabled>{{fornecedor.descricao}}</textarea>
+            <input style="font-weight: bold;" type="ativo" value="{% if fornecedor.is_ative %} Ativo {% else %} Inativo {% endif %}" readonly disabled>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

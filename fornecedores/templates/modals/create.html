@@ -1,0 +1,18 @@
+<div class="modal fade" id="create" tabindex="-1" aria-labelledby="createLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="createLabel">Cadastrar fornecedor</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="{% url 'fornecedores_create' %}" method="post">
+            {% csrf_token %}
+            <input type="text" name="nome" placeholder="Nome do fornecedor" required>
+            <textarea name="descricao" rows="5" placeholder="Descreva sobre o fornecedor..." required></textarea>
+            <input class="criar-tarefa-btn" type="submit" value="Cadastrar">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
